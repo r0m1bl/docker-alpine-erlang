@@ -1,5 +1,5 @@
 # Erlang
-FROM alpine:latest
+FROM alpine:edge
 
 RUN apk upgrade -f
 
