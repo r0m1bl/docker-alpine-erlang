@@ -1,10 +1,10 @@
 # Erlang
-FROM alpine:3.1
+FROM alpine:latest
 
 RUN apk upgrade -f
 
 RUN apk add --update-cache make wget git grep openssh-client perl && rm -rf /var/cache/apk/*
-RUN apk add --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ \
+RUN apk add --update-cache \
     erlang \
     erlang-public-key erlang-syntax-tools erlang-erl-docgen erlang-gs erlang-observer erlang-ssh \
     erlang-ose erlang-cosfiletransfer erlang-runtime-tools erlang-os-mon erlang-tools erlang-cosproperty \
